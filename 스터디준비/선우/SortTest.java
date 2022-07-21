@@ -14,7 +14,8 @@ public class SortTest {
         Sort sort;
         if (ch == 'B' || ch == 'b') {
             sort = new BubbleSort();
-        }if (ch == 'H' || ch == 'h') {
+        }
+        if (ch == 'H' || ch == 'h') {
             sort = new HeapSort();
         }
         if (ch == 'Q' || ch == 'q') {
@@ -40,7 +41,7 @@ interface Sort {
     void description();
 }
 
-class QuickSort implements Sort{
+class QuickSort implements Sort {
     @Override
     public void ascending(int[] arr) {
 
@@ -57,7 +58,7 @@ class QuickSort implements Sort{
     }
 }
 
-class HeapSort implements Sort{
+class HeapSort implements Sort {
     @Override
     public void ascending(int[] arr) {
 
@@ -74,7 +75,7 @@ class HeapSort implements Sort{
     }
 }
 
-class BubbleSort implements Sort{
+class BubbleSort implements Sort {
     @Override
     public void ascending(int[] arr) {
 
